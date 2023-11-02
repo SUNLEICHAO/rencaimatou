@@ -1,5 +1,9 @@
 * {
   text-decoration: none;
+}
+
+/* 样式提取 */
+.font-hhp{
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
 
@@ -231,7 +235,6 @@
   margin-bottom: 14px;
   margin-top: 24px;
   font-size: 20px;
-  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   line-height: 28px;
 }
 
@@ -272,7 +275,6 @@
 .page-body .trial-section .section-container .container-desc {
   margin: 16px 0 32px;
   font-size: 18px;
-  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   line-height: 40px;
   color: #fff;
 }
@@ -366,7 +368,6 @@
 
 .page-footer .footer-beian>* {
   color: rgba(0, 0, 0, 0.65);
-  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
 
 .page-footer .footer-beian a {
