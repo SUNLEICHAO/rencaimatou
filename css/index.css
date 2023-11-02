@@ -1,4 +1,5 @@
 * {
+  text-decoration: none;
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
 
@@ -88,7 +89,7 @@
   margin: auto;
   width: 1440px;
   height: 418px;
-  padding-top: 98px;
+  padding-top: 96px;
   background: url(../img/banner.png);
   background-size: 1440px 418px;
   background-repeat: no-repeat;
@@ -109,7 +110,7 @@
   line-height: 28px;
   font-size: 20px;
   color: #fff;
-  margin-top: 11px;
+  margin-top: 12px;
 }
 
 .page-body .body-slogan-A .container,
@@ -125,7 +126,8 @@
 
 .page-body .body-slogan-A .container .text-title,
 .page-body .body-slogan-B .container .text-title {
-  padding-top: 26px;
+  /* padding-top: 26px; */
+  padding-top: 24px;
   line-height: 48px;
   font-size: 32px;
   color: #000;
@@ -133,18 +135,31 @@
 
 .page-body .body-slogan-A .container .text-content,
 .page-body .body-slogan-B .container .text-content {
-  margin-top: 30px;
+  margin-top: 32px;
   padding-left: 20px;
   width: 384px;
 }
 
 .page-body .body-slogan-A .container .text-content li,
 .page-body .body-slogan-B .container .text-content li {
+  position: relative;
   margin-top: 16px;
   line-height: 26px;
   font-size: 16px;
   font-family: PingFangSC-Regular, PingFang SC;
   color: rgba(0, 0, 0, 0.85);
+}
+
+.page-body .body-slogan-A .container .text-content li::before,
+.page-body .body-slogan-B .container .text-content li::before{
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -18px;
+  width: 6px;
+  height: 6px;
+  background-color: #000;
+  border-radius: 50%;
 }
 
 .page-body .body-slogan-A .container .image img,
@@ -182,7 +197,9 @@
 .page-body .body-feature {
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 75px;
+  padding-top: 72px;
+  padding-bottom: 79px;
+  line-height: 1.5;
   width: 100%;
   margin: auto;
   height: 418px;
@@ -192,8 +209,9 @@
 .page-body .body-feature .title {
   text-align: center;
   font-size: 32px;
+  font-weight: 500;
   padding-bottom: 56px;
-  margin-bottom: 19px;
+  margin-bottom: 16px;
 }
 
 .page-body .body-feature .point {
@@ -219,8 +237,9 @@
 
 .page-body .body-feature .point li span:nth-of-type(1) {
   font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   line-height: 28px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   margin-top: 24px;
 }
 
@@ -240,7 +259,7 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding-top: 74px;
+  padding-top: 72px;
   box-sizing: border-box;
   width: 1440px;
   height: 100%;
@@ -260,11 +279,13 @@
 }
 
 .page-body .body-trial .trial .trial-desc {
-  margin: 21px 0 25px;
-  height: 40px;
+  margin: 16px 0 32px;
+  line-height: 40px;
   font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   color: #fff;
 }
+
 
 .page-body .body-trial .trial .trial-btn {
   margin: 0 auto;
@@ -281,7 +302,9 @@
 /* 底部信息 */
 .page-footer {
   width: 1184px;
+  height: 148;
   margin: auto;
+  box-sizing: border-box;
 }
 
 .page-footer a {
@@ -292,6 +315,8 @@
   display: flex;
   justify-content: space-between;
   height: 84px;
+  box-sizing: border-box;
+  border-top: 1px solid #ebebeb;
   padding-right: 32px;
 }
 
@@ -301,7 +326,7 @@
 
 .page-footer .footer-info p>* {
   position: relative;
-  top: 2px;
+  /* top: 2px; */
 }
 
 .page-footer .footer-info p.footer-tel span {
@@ -324,20 +349,19 @@
 
 }
 
-.page-footer .footer-info .contact {
-  position: relative;
-  top: -1px;
+.page-footer .footer-info .contact{
+  display: flex;
+
 }
 
 .page-footer .footer-info .contact .text {
   color: rgba(0, 0, 0, 0.85);
-  margin-right: 8px;
+  margin-right: 12px;
 }
 
 .page-footer .footer-info .contact .tel {
   color: rgba(0, 0, 0, 0.65);
   font-family: PingFangSC-Regular, PingFang SC;
-
 }
 
 .page-footer .footer-info a {
@@ -356,9 +380,11 @@
 
 .page-footer .footer-beian>* {
   color: rgba(0, 0, 0, 0.65);
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  
 }
 
 .page-footer .footer-beian a {
   position: relative;
-  bottom: 1px;
+  /* bottom: 1px; */
 }
